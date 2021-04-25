@@ -10,6 +10,7 @@
 		FA4F90CC2636396A007E7CC4 /* FrameWorkS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4F90C22636396A007E7CC4 /* FrameWorkS.framework */; };
 		FA4F90D12636396A007E7CC4 /* FrameWorkSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4F90D02636396A007E7CC4 /* FrameWorkSTests.swift */; };
 		FA4F90D32636396A007E7CC4 /* FrameWorkS.h in Headers */ = {isa = PBXBuildFile; fileRef = FA4F90C52636396A007E7CC4 /* FrameWorkS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA4F90DF26363978007E7CC4 /* HI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4F90DE26363978007E7CC4 /* HI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		FA4F90CB2636396A007E7CC4 /* FrameWorkSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrameWorkSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4F90D02636396A007E7CC4 /* FrameWorkSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameWorkSTests.swift; sourceTree = "<group>"; };
 		FA4F90D22636396A007E7CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA4F90DE26363978007E7CC4 /* HI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				FA4F90C52636396A007E7CC4 /* FrameWorkS.h */,
 				FA4F90C62636396A007E7CC4 /* Info.plist */,
+				FA4F90DE26363978007E7CC4 /* HI.swift */,
 			);
 			path = FrameWorkS;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					FA4F90C12636396A007E7CC4 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					FA4F90CA2636396A007E7CC4 = {
 						CreatedOnToolsVersion = 12.4;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA4F90DF26363978007E7CC4 /* HI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		FA4F90D72636396A007E7CC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WG5V7B83H4;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ca.iotpay.FrameWorkS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		FA4F90D82636396A007E7CC4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WG5V7B83H4;
@@ -389,6 +397,7 @@
 		FA4F90DA2636396A007E7CC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WG5V7B83H4;
 				INFOPLIST_FILE = FrameWorkSTests/Info.plist;
@@ -407,6 +416,7 @@
 		FA4F90DB2636396A007E7CC4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WG5V7B83H4;
 				INFOPLIST_FILE = FrameWorkSTests/Info.plist;
